@@ -8,7 +8,7 @@ public class Registrant {
 	private String memberID;
 	private Date CheckinTime;
 	
-	
+	// Constructors
 	public Registrant(String name, String memberID) {
 		super();
 		this.name = name;
@@ -45,6 +45,7 @@ public class Registrant {
 	
 	// Helper methods
 	public boolean isCheckedIn() {
+		// a null check-in time means registrant not checked in
 		return getCheckinTime() == null;
 	}
 }

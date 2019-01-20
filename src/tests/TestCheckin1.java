@@ -1,7 +1,6 @@
 package tests;
 
 import java.util.Date;
-
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -17,7 +16,6 @@ public class TestCheckin1 {
 
 	@Before
 	public void setUp() throws Exception {
-
 	}
 
 	@Test
@@ -32,5 +30,5 @@ public class TestCheckin1 {
 		Date later = new Date();
 		assertTrue( mary.getCheckinTime().before(later) );
 	}
-
+	
 }
